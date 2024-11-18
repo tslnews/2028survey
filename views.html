@@ -3,48 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5C First-Year Class of 2028 Survey - Demographics</title>
+    <title>5C First-Year Class of 2028 Survey - Academics</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for the tabs */
+        .tab-nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        
+        .tab-nav ul li {
+            padding: 10px 20px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            text-align: center;
+        }
+        
+        /* Change active tab color to blue */
+        .tab-nav ul li.active {
+            background-color: #007BFF;  /* Blue color */
+            color: white; /* White text on blue background */
+        }
+
+        /* Style for tab content */
+        .tab-content {
+            display: none; /* Hide all content by default */
+            margin-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block; /* Show active tab content */
+        }
+
+        /* Make the iframe responsive */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
+ <header>
         <div class="container">
             <h1>5C First-Year Class of 2028 Survey</h1>
             <nav>
                 <ul class="main-nav">
-                   <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="demographics.html">Demographics</a></li>
                     <li><a href="academics.html">Academics</a></li>
                     <li><a href="lifestyle.html">Lifestyle</a></li>
- 			<li><a href="views.html" class="active">Views & Beliefs</a></li>
+                    <li><a href="views.html" class="active">Views & Beliefs</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+  <main>
         <div class="container">
             <section class="intro">
-                <h2>Views & Beliefs</h2>
-                <p>Summary</p>
+                <h2>Academics</h2>
+                <p>Seeing as they are entering five politically active campuses, we wanted to know what role the Class of 2028 is going to play in the next four years of on-campus discourse. Who did they vote for, many filled out ballots for the first time? How do they identify politically? Are these campuses remaining predominantly liberal, or are first-years shifting the 5Cs to the right (or maybe even further left)? How did they feel about coming to campus after a year of extensive protests? What are their thoughts on pro-Palestinian organizing on campus? With free speech on campus remaining a significant topic on many students’ minds, these questions speak to what our campuses might look like going forward.
+</p>
             </section>
 
             <section class="tabs">
+                <!-- Tab Navigation -->
                 <div class="tab-nav">
                     <ul>
-                        <li class="tab-link active" data-tab="politics">Political Affiliation & Election</li>
+                        <li class="tab-link active" data-tab="politics">Political Affiliation & Election Views</li>
                         <li class="tab-link" data-tab="current">Views on Current Events</li>
-                      
-               
+                   
+                    </ul>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content active" id="politics">
+                    <iframe title="Who do you plan to vote for in the upcoming election?" aria-label="Column Chart" id="datawrapper-chart-8NMFd" src="https://datawrapper.dwcdn.net/8NMFd/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="What political party do you identify with?" aria-label="Column Chart" id="datawrapper-chart-LUZgu" src="https://datawrapper.dwcdn.net/LUZgu/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="453" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="What do you believe your political leaning to be?" aria-label="Column Chart" id="datawrapper-chart-UBnTf" src="https://datawrapper.dwcdn.net/UBnTf/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="451" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="5C Political Climate Views" aria-label="Column Chart" id="datawrapper-chart-nlwin" src="https://datawrapper.dwcdn.net/nlwin/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="451" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="5C Political Climate Views By Party Affiliation" aria-label="Column Chart" id="datawrapper-chart-TmnId" src="https://datawrapper.dwcdn.net/TmnId/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="451" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Voting Plans by Political Leaning" aria-label="Column Chart" id="datawrapper-chart-PfiqW" src="https://datawrapper.dwcdn.net/PfiqW/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+                </div>
+
+                <div class="tab-content" id="current">
+                    <iframe title="Views on Expanding Abortion Access" aria-label="Column Chart" id="datawrapper-chart-ZUsGt" src="https://datawrapper.dwcdn.net/ZUsGt/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on Marijuana Legalization" aria-label="Column Chart" id="datawrapper-chart-BUVGz" src="https://datawrapper.dwcdn.net/BUVGz/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on Calls for Ceasefire in Palestine" aria-label="Column Chart" id="datawrapper-chart-sNOGL" src="https://datawrapper.dwcdn.net/sNOGL/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="464" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on U.S. Relations with the State of Israel" aria-label="Column Chart" id="datawrapper-chart-DJjLi" src="https://datawrapper.dwcdn.net/DJjLi/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="470" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on AI in Higher Education" aria-label="Column Chart" id="datawrapper-chart-FHY7K" src="https://datawrapper.dwcdn.net/FHY7K/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on Abolition of Legacy Admissions" aria-label="Column Chart" id="datawrapper-chart-mU9AJ" src="https://datawrapper.dwcdn.net/mU9AJ/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on the Abolition of Affirmative Action Admissions" aria-label="Column Chart" id="datawrapper-chart-Z1TEL" src="https://datawrapper.dwcdn.net/Z1TEL/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on the U.S. Police State" aria-label="Column Chart" id="datawrapper-chart-CZIIq" src="https://datawrapper.dwcdn.net/CZIIq/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="470" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on Marijuana Legalization by Marijuana Use" aria-label="Column Chart" id="datawrapper-chart-epxvM" src="https://datawrapper.dwcdn.net/epxvM/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="465" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on Aboliton of Legacy Admissions by Legacy Status" aria-label="Column Chart" id="datawrapper-chart-4HcuK" src="https://datawrapper.dwcdn.net/4HcuK/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="484" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<iframe title="Views on AI Use in Higher Education by Intended Major" aria-label="Column Chart" id="datawrapper-chart-9mx9p" src="https://datawrapper.dwcdn.net/9mx9p/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="470" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+                </div>
+
+            </section>
+        </div>
     </main>
 
     <footer>
         <div class="container">
-      
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        // JavaScript to handle tab switching
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll(".tab-link");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function() {
+                    // Remove active class from all tabs and tab contents
+                    tabs.forEach(t => t.classList.remove("active"));
+                    tabContents.forEach(content => content.classList.remove("active"));
+
+                    // Add active class to the clicked tab and its corresponding content
+                    tab.classList.add("active");
+                    const activeTabContent = document.getElementById(tab.dataset.tab);
+                    activeTabContent.classList.add("active");
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
